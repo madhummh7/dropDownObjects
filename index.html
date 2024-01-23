@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multiple Dropdowns Example</title>
+    <style>
+      select {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <label for="categoryDropdown" id="categoryDropdown">D1:</label>
+    <select id="type-cat" onchange="filterData('type', this)" multiple>
+      <option value="">Select</option>
+      <option value="1">Opt1</option>
+      <option value="2">Opt2</option>
+      <option value="3">Opt3</option>
+    </select>
+
+    <label for="nameDropdown">D2:</label>
+    <select id="rank-cat" onchange="filterData('rank', this)" multiple>
+      <option value="">Select</option>
+      <option value="1">Opt4</option>
+      <option value="2">Opt5</option>
+      <option value="3">Opt6</option>
+    </select>
+
+    <br /><br /><br />
+
+    <!-- filtered data here shown in the UI -->
+    <div id="filteredData"></div>
+
+    <form action="#"></form>
+    <script src="testing2.js"></script>
+  </body>
+</html>
